@@ -1,0 +1,36 @@
+{
+    "name": "serpentblade/php-vault",
+    "description": "HashiCorp Vault HTTP Client",
+    "type": "library",
+    "keywords": ["hashicorp", "vault", "security", "password"],
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~5|~6"
+    },
+    "require-dev": {
+        "ext-openssl": "*",
+        "ext-pcre": "*",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Krieger",
+            "email": "dan@kriegertek.com"
+        }
+    ],
+    "suggest": {
+        "ext-curl": "Send HTTP requests via cURL",
+        "ext-openssl": "Secure requests to Vault"
+    },
+    "autoload": {
+        "psr-4": {
+            "VaultPhp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VaultPhp\\Test\\": "tests/"
+        }
+    }
+}
